@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Liste des Déclarants</title>
+    <!-- Ajoutez les liens vers les fichiers Bootstrap CSS ici -->
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/5.1.3/css/bootstrap.min.css}" />
+</head>
+<body>
+	 <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="http://localhost:8084/">GESTION DES IMPOTS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" th:href="@{/api/declarants/add}">Ajouter un Déclarant</a>
+                    </li>
+                    <!-- Ajoutez d'autres éléments de menu ici si nécessaire -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+	
+    <div class="container mt-4">
+        <h1 class="mb-4">Liste des Déclarants</h1>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Raison Sociale</th>
+                    <th>Adresse</th>
+                    <th>Email</th>
+                    <th>Téléphone</th>
+                    <th>Actions</th>
+                    
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="declarant : ${declarants}">
+                    <td th:text="${declarant.raisonSociale}"></td>
+                    <td th:text="${declarant.adresse}"></td>
+                    <td th:text="${declarant.email}"></td>
+                    <td th:text="${declarant.telephone}"></td>
+                    <td>
+                        <a th:href="@{/api/declarants/edit/{id}(id=${declarant.id})}" class="btn btn-sm btn-primary">Modifier</a>
+                        <a th:href="@{/api/declarants/delete/{id}(id=${declarant.id})}" class="btn btn-sm btn-danger">Supprimer</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- Ajoutez le lien vers le fichier Bootstrap JS ici si nécessaire -->
+    <script th:src="@{/webjars/bootstrap/5.1.3/js/bootstrap.min.js}"></script>
+</body>
+</html>

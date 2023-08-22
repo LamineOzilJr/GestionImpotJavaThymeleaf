@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Modifier un paiement</title>
+    <!-- Ajoutez les liens vers les fichiers Bootstrap CSS ici -->
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/5.1.3/css/bootstrap.min.css}" />
+</head>
+<body>
+    <div class="container mt-4">
+        <h2 class="mb-4">Modifier un paiement</h2>
+        <form th:action="@{/api/paiements/edit/{id}(id=${paiement.id})}" method="post" th:object="${paiement}">
+            <div class="mb-3">
+                <label for="datePaiement" class="form-label">Date de paiement:</label>
+                <input type="date" id="datePaiement" name="datePaiement" th:field="*{datePaiement}" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="montantPaiement" class="form-label">Montant de paiement:</label>
+                <input type="number" id="montantPaiement" name="montantPaiement" th:field="*{montantPaiement}" class="form-control" required>
+            </div>
+            <!-- Ajoutez d'autres champs ici -->
+            <button type="submit" class="btn btn-primary">Modifier</button>
+        </form>
+    </div>
+    <!-- Ajoutez le lien vers le fichier Bootstrap JS ici si nécessaire -->
+    <script th:src="@{/webjars/bootstrap/5.1.3/js/bootstrap.min.js}"></script>
+</body>
+</html>

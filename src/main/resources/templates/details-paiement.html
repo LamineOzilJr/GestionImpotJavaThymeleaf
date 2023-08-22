@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Détails du paiement</title>
+    <!-- Ajoutez les liens vers les fichiers Bootstrap CSS ici -->
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/5.1.3/css/bootstrap.min.css}" />
+</head>
+<body>
+    <div class="container mt-4">
+        <h2 class="mb-4">Détails du paiement</h2>
+        <div class="mb-3">
+            <p>ID Paiement : <span th:text="${paiement.id}"></span></p>
+            <p>Date de paiement : <span th:text="${paiement.datePaiement}"></span></p>
+            <p>Montant de paiement : <span th:text="${paiement.montantPaiement}"></span></p>
+        </div>
+
+        <h3 class="mb-3">Détails de la déclaration associée :</h3>
+        <div class="mb-3">
+            <p>ID Déclaration : <span th:text="${paiement.declaration.id}"></span></p>
+            <p>Titre de déclaration : <span th:text="${paiement.declaration.titreDeclaration}"></span></p>
+            <p>Date de déclaration : <span th:text="${paiement.declaration.dateDeclaration}"></span></p>
+            <p>Montant de déclaration : <span th:text="${paiement.declaration.montantDeclaration}"></span></p>
+            <!-- Ajoutez d'autres détails de déclaration ici -->
+        </div>
+        <div class="mt-4">
+    		<a class="btn btn-primary" th:href="@{/api/paiements/pdf/{id}(id=${paiement.id})}" target="_blank">Télécharger le PDF</a>
+		</div>
+    </div>
+    <!-- Ajoutez le lien vers le fichier Bootstrap JS ici si nécessaire -->
+    <script th:src="@{/webjars/bootstrap/5.1.3/js/bootstrap.min.js}"></script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Modifier un déclarant</title>
+    <!-- Ajoutez les liens vers les fichiers Bootstrap CSS ici -->
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/5.1.3/css/bootstrap.min.css}" />
+</head>
+<body>
+    <div class="container mt-4">
+        <h2 class="mb-4">Modifier un déclarant</h2>
+        <form th:action="@{/api/declarants/edit/{id}(id=${declarant.id})}" method="post" th:object="${declarant}">
+            <div class="mb-3">
+                <label for="raisonSociale" class="form-label">Raison sociale:</label>
+                <input type="text" id="raisonSociale" name="raisonSociale" th:field="*{raisonSociale}" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="adresse" class="form-label">Adresse:</label>
+                <input type="text" id="adresse" name="adresse" th:field="*{adresse}" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email:</label>
+                <input type="email" id="email" name="email" th:field="*{email}" class="form-control" required>
+            </div>
+            <div class="mb-3">
+                <label for="telephone" class="form-label">Téléphone:</label>
+                <input type="text" id="telephone" name="telephone" th:field="*{telephone}" class="form-control" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Modifier</button>
+        </form>
+    </div>
+    <!-- Ajoutez le lien vers le fichier Bootstrap JS ici si nécessaire -->
+    <script th:src="@{/webjars/bootstrap/5.1.3/js/bootstrap.min.js}"></script>
+</body>
+</html>

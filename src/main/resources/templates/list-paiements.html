@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Liste des paiements</title>
+    <!-- Ajoutez les liens vers les fichiers Bootstrap CSS ici -->
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/5.1.3/css/bootstrap.min.css}" />
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="http://localhost:8084/">GESTION DES IMPOTS</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            
+        </div>
+    </nav>
+
+    <div class="container mt-4">
+        <h2 class="mb-4">Liste des paiements</h2>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Date de paiement</th>
+                    <th>Montant de paiement</th>
+                    <!-- Ajoutez d'autres en-têtes ici -->
+                    <th>Details de la Declaration</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="paiement : ${paiements}">
+                    <td th:text="${paiement.id}"></td>
+                    <td th:text="${paiement.datePaiement}"></td>
+                    <td th:text="${paiement.montantPaiement}"></td>
+                    <!-- Ajoutez d'autres colonnes ici -->
+                    <td>
+                        <a th:href="@{/api/paiements/details/{id}(id=${paiement.id})}" class="btn btn-sm btn-info">Détails</a>
+                    </td>
+                    <td>
+                        <a th:href="@{/api/paiements/edit/{id}(id=${paiement.id})}" class="btn btn-sm btn-primary">Modifier</a>
+                        <a th:href="@{/api/paiements/delete/{id}(id=${paiement.id})}" class="btn btn-sm btn-danger">Supprimer</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <!-- Ajoutez le lien vers le fichier Bootstrap JS ici si nécessaire -->
+    <script th:src="@{/webjars/bootstrap/5.1.3/js/bootstrap.min.js}"></script>
+</body>
+</html>

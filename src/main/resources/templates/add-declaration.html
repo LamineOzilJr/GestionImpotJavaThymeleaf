@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Ajouter une Déclaration</title>
+    <!-- Ajoutez les liens vers les fichiers Bootstrap CSS ici -->
+    <link rel="stylesheet" th:href="@{/webjars/bootstrap/5.1.3/css/bootstrap.min.css}" />
+</head>
+<body>
+    <div class="container mt-4">
+        <h1 class="mb-4">Ajouter une Déclaration</h1>
+        <form action="#" th:action="@{/api/declarations/add}" th:object="${declaration}" method="post">
+            <div class="mb-3">
+                <label for="titreDeclaration" class="form-label">Titre Declaration:</label>
+                <input type="text" class="form-control" th:field="*{titreDeclaration}" id="titreDeclaration" />
+            </div>
+            <div class="mb-3">
+                <label for="dateDeclaration" class="form-label">Date Declaration:</label>
+                <input type="date" class="form-control" th:field="*{dateDeclaration}" id="dateDeclaration" />
+            </div>
+            <div class="mb-3">
+                <label for="montantDeclaration" class="form-label">Montant Declaration:</label>
+                <input type="text" class="form-control" th:field="*{montantDeclaration}" id="montantDeclaration" />
+            </div>
+            <button type="submit" class="btn btn-primary">Ajouter</button>
+        </form>
+    </div>
+    <!-- Ajoutez le lien vers le fichier Bootstrap JS ici si nécessaire -->
+    <script th:src="@{/webjars/bootstrap/5.1.3/js/bootstrap.min.js}"></script>
+</body>
+</html>
