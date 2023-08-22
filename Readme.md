@@ -12,7 +12,7 @@ Gestion de la regulation des impots
 
 Clonner ou telecharger le format zip du projet
 L'ouvrir avec votre IDE, Eclipse de preference  
-Creer dans une base de donnees nommee impotregul2 dans votre serveur
+Creer une base de donnees nommee impotregul2 dans votre serveur
 S'assurer que le port 8084 est libre ou bien le modifier a la premiere ligne dans le fichier application.propreties
 Faire Click droit sur le dossier du projet 
     - Maven
