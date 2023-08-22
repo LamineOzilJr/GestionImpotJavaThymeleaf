@@ -6,6 +6,18 @@ Gestion de la regulation des impots
 ## Capture d'écran
 
 ![alt text](https://github.com/LamineOzilJr/GestionImpotJavaThymeleaf/blob/main/images/Accueil.png?raw=true)
+![alt text](https://github.com/LamineOzilJr/GestionImpotJavaThymeleaf/blob/main/images/ListeDeclarants.png?raw=true)
+![alt text](https://github.com/LamineOzilJr/GestionImpotJavaThymeleaf/blob/main/images/FormAdjoutDeclarant.png?raw=true)
+![alt text](https://github.com/LamineOzilJr/GestionImpotJavaThymeleaf/blob/main/images/FormModifDeclarant.png?raw=true)
+![alt text](https://github.com/LamineOzilJr/GestionImpotJavaThymeleaf/blob/main/images/ListeDeclarations.png?raw=true)
+![alt text](https://github.com/LamineOzilJr/GestionImpotJavaThymeleaf/blob/main/images/FormAjoutDeclaration.png?raw=true)
+![alt text](https://github.com/LamineOzilJr/GestionImpotJavaThymeleaf/blob/main/images/FormModifDeclaration.png?raw=true)
+![alt text](https://github.com/LamineOzilJr/GestionImpotJavaThymeleaf/blob/main/images/ListePaiment.png?raw=true)
+![alt text](https://github.com/LamineOzilJr/GestionImpotJavaThymeleaf/blob/main/images/FormPaiementDecla.png?raw=true)
+![alt text](https://github.com/LamineOzilJr/GestionImpotJavaThymeleaf/blob/main/images/FormModifPaiement.png?raw=true)
+![alt text](https://github.com/LamineOzilJr/GestionImpotJavaThymeleaf/blob/main/images/DetailPaiement.png?raw=true)
+![alt text](https://github.com/LamineOzilJr/GestionImpotJavaThymeleaf/blob/main/images/PdfTelecharge.png?raw=true)
+
 
 
 ## Utilisation
