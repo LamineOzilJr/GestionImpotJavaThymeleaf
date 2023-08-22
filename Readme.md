@@ -5,7 +5,7 @@ Gestion de la regulation des impots
 
 ## Capture d'écran
 
-![Capture d'écran](C:\Users\hp\eclipse-workspace\ImpotRegaluation\images\Acceuil.png)
+![alt text](https://github.com/LamineOzilJr/GestionImpotJavaThymeleaf/blob/main/images/Accueil.png?raw=true)
 
 
 ## Utilisation
