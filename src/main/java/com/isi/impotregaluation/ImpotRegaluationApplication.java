@@ -4,10 +4,10 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class impotregaluationApplication {
+public class ImpotregaluationApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(impotregaluationApplication.class, args);
+		SpringApplication.run(ImpotregaluationApplication.class, args);
 	}
 
 }
