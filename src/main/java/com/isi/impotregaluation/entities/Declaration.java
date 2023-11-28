@@ -1,4 +1,4 @@
-package com.isi.ImpotRegaluation.entities;
+package com.isi.impotregaluation.entities;
 
 import java.time.LocalDate;
 import java.util.HashSet;

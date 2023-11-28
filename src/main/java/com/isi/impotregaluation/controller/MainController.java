@@ -1,4 +1,4 @@
-package com.isi.ImpotRegaluation.controller;
+package com.isi.impotregaluation.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;

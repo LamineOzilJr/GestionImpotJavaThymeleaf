@@ -1,4 +1,4 @@
-package com.isi.ImpotRegaluation.controller;
+package com.isi.impotregaluation.controller;
 
 import java.util.List;    
 
@@ -11,8 +11,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
-import com.isi.ImpotRegaluation.dao.IDeclarant;
-import com.isi.ImpotRegaluation.entities.Declarant;
+import com.isi.impotregaluation.dao.IDeclarant;
+import com.isi.impotregaluation.entities.Declarant;
 
 @Controller
 public class DeclarantController {

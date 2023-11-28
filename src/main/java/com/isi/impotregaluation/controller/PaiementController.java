@@ -1,4 +1,4 @@
-package com.isi.ImpotRegaluation.controller;
+package com.isi.impotregaluation.controller;
 
 import java.util.List;
 
@@ -11,10 +11,10 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 
-import com.isi.ImpotRegaluation.dao.IDeclaration;
-import com.isi.ImpotRegaluation.dao.IPaiement;
-import com.isi.ImpotRegaluation.entities.Declaration;
-import com.isi.ImpotRegaluation.entities.Paiement;
+import com.isi.impotregaluation.dao.IDeclaration;
+import com.isi.impotregaluation.dao.IPaiement;
+import com.isi.impotregaluation.entities.Declaration;
+import com.isi.impotregaluation.entities.Paiement;
 
 import org.springframework.web.bind.annotation.PathVariable;
 

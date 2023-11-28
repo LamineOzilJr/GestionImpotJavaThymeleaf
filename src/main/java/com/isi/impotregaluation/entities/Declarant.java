@@ -1,4 +1,4 @@
-package com.isi.ImpotRegaluation.entities;
+package com.isi.impotregaluation.entities;
 
 import java.util.HashSet;
 import java.util.Set;

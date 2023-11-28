@@ -1,13 +1,13 @@
-package com.isi.ImpotRegaluation;
+package com.isi.impotregaluation;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ImpotRegaluationApplication {
+public class impotregaluationApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ImpotRegaluationApplication.class, args);
+		SpringApplication.run(impotregaluationApplication.class, args);
 	}
 
 }

@@ -1,4 +1,4 @@
-package com.isi.ImpotRegaluation.controller;
+package com.isi.impotregaluation.controller;
 
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.PDPage;
@@ -13,8 +13,8 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import com.isi.ImpotRegaluation.dao.IPaiement;
-import com.isi.ImpotRegaluation.entities.Paiement;
+import com.isi.impotregaluation.dao.IPaiement;
+import com.isi.impotregaluation.entities.Paiement;
 
 import java.io.ByteArrayOutputStream;
 import java.io.IOException;
