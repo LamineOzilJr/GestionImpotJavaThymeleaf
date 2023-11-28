@@ -1,6 +1,7 @@
 package com.isi.impotregaluation.controller;
 
-import java.util.List;    
+import java.util.List;  
+import java.util.String;  
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -14,11 +15,13 @@ import org.springframework.web.bind.annotation.PostMapping;
 import com.isi.impotregaluation.dao.IDeclarant;
 import com.isi.impotregaluation.entities.Declarant;
 
+
 @Controller
 public class DeclarantController {
 	
 	 // Injection des dépendances pour le repository
 	 private final IDeclarant iDeclarant;
+	 private final String listdeclarantendpoint = "redirect:/api/declarants/list";
 	 
 	 @Autowired
 	    public DeclarantController(IDeclarant iDeclarant) {
@@ -37,7 +40,7 @@ public class DeclarantController {
 	            return "add-declarant";
 	        }
 	        iDeclarant.save(declarant);
-	        return "redirect:/api/declarants/list";
+	        return listdeclarantendpoint;
 	    }
 
 	    @GetMapping("/api/declarants/list")
@@ -63,13 +66,13 @@ public class DeclarantController {
 	            return "edit-declarant";
 	        }
 	        iDeclarant.save(declarant);
-	        return "redirect:/api/declarants/list";
+	        return listdeclarantendpoint;
 	    }
 	    
 	    @GetMapping("/api/declarants/delete/{id}")
 	    public String deleteDeclarant(@PathVariable Long id) {
 	        iDeclarant.deleteById(id);
-	        return "redirect:/api/declarants/list";
+	        return listdeclarantendpoint;
 	    }
 
 
