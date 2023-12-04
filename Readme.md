@@ -51,6 +51,7 @@ Donc nous derriere on va suivre ses recommendations et retester une sencode fois
   - git add .
   - git commit -m "nom du commit"
   - git push
+    
 Ces commandes ci-dessus permettent de mettre a jour notre projet nous permettant ainsi de prendre en compte les nouvelles modifications.
 ![alt text](https://github.com/LamineOzilJr/GestionImpotJavaThymeleaf/blob/main/SonarReport/sonar1findCode.png?raw=true)
 
