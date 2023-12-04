@@ -6,7 +6,7 @@ Apres avoir fini de developper notre solution, nous allons maintenant tester not
 Pour utiliser Sonar, il nous faut un compte d'utilisateur.
 Pour cela nous avons deux options :
   - Nous pouvons creer un compte directement sur sonar
-  - Nous pouvons eventuellemnt aussi linker notre compte github, bitbuckrt, gitlab ou azure devops a sonar qui va a son niveau prendre les informations renseignees sur le compte de la plateforme choisie pour nous creer un compte.
+  - Nous pouvons eventuellemnt aussi linker notre compte github, bitbucket, gitlab ou azure devops a sonar qui va a son niveau prendre les informations renseignees sur le compte de la plateforme choisie pour nous creer un compte.
 
 Pour ce test nous allons choisir de Github.
 Pour ce faire : 
