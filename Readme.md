@@ -9,7 +9,9 @@ Pour cela nous avons deux options :
   - Nous pouvons eventuellemnt aussi linker notre compte github, bitbucket, gitlab ou azure devops a sonar qui va a son niveau prendre les informations renseignees sur le compte de la plateforme choisie pour nous creer un compte.
 
 Pour ce test nous allons choisir Github.
+
 Pour ce faire : 
+
 Nous allons d'abord nous connecter puis clicker sur Github.
 ![alt text](https://github.com/LamineOzilJr/GestionImpotJavaThymeleaf/blob/main/SonarReport/loginSonar.png?raw=true)
 
