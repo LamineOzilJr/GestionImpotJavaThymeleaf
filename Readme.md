@@ -40,6 +40,7 @@ Sonar est entrain de tester notre projet.
 ![alt text](https://github.com/LamineOzilJr/GestionImpotJavaThymeleaf/blob/main/SonarReport/sonatTesting.png?raw=true)
 
 Resultat apres premier Test : Nous voyons clairement la majeur partie de nos erreurs ou la mauvaise maniere dont la logique du code a ete etablie en terme de qualite de code.
+NB: les noms de projets sont deifferents car nous avions deja fait le travail avec le projet gestionImpot, ensuite refais juste une simulation pour prendre des captures pour ce rapport. Mais le projet teste c'est le projet Spring GestionImpotJavaThymeleaf
 ![alt text](https://github.com/LamineOzilJr/GestionImpotJavaThymeleaf/blob/main/SonarReport/sonar2bugsShow.png?raw=true)
 
 La non seulement Sonar nous montre nos erreurs, mais en plus il nous les explique et nous suggere meme des solutions. 
