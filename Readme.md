@@ -53,6 +53,7 @@ Donc nous derriere on va suivre ses recommendations et retester une sencode fois
   - git push
     
 Ces commandes ci-dessus permettent de mettre a jour notre projet nous permettant ainsi de prendre en compte les nouvelles modifications.
+Et Voila le resultat du test apres correction 
 ![alt text](https://github.com/LamineOzilJr/GestionImpotJavaThymeleaf/blob/main/SonarReport/sonar1findCode.png?raw=true)
 
 ## Contributeurs
